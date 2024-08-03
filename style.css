@@ -1,0 +1,707 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https: //fonts.google.com/specimen/Roboto?query=roboto');
+@import url('https: //fonts.google.com/noto/specimen/Noto+Sans+TC');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+textarea {
+  resize: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Bruno Ace SC";
+  color: #d1d1d1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.navBar__wrap {
+  background-color: #aa0601;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navBar__logo {
+  width: 15%;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navBar__linkList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navBar__linkButton {
+  width: 44.7%;
+  font-size: 16px;
+  text-align-last: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.titlePoster {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  max-height: 100%;
+}
+
+.titlePoster__titleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 50% 5% 50% 20%;
+}
+
+.titlePoster__subTitle {
+  font-size: 16px;
+  color: #650300;
+}
+
+.titlePoster__mainTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #650300;
+}
+
+.titlePoster__button {
+  width: 46%;
+}
+
+.titlePoster__button p {
+  white-space: nowrap;
+  font-size: 20px;
+  background-color: #650300;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.serviceInfo {
+  background-color: #fbf2f2;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.serviceInfo__list,
+.productType__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.serviceInfo__listItem {
+  width: 84.5%;
+}
+
+.serviceInfo__title,
+.serviceInfo__listItem h3 {
+  font-size: 24px;
+  color: #650300;
+  font-weight: bold;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.serviceInfo__listItem img {
+  height: 83px;
+  width: 83px;
+}
+
+.serviceInfo__listItem p {
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+.productType {
+  background: #ffffff;
+  text-align: center;
+}
+
+.productType__title {
+  font-size: 48px;
+  color: #650300;
+  font-weight: bold;
+}
+
+.productType__listItem {
+  width: 81%;
+}
+
+.productType__listItem h3 {
+  font-size: 48px;
+  color: #aa0601;
+  font-weight: bold;
+  text-align: center;
+}
+
+.productDesign {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productDesign__title {
+  font-size: 24px;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.productDesign__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productDesign__listItem {
+  width: 84.5%;
+  margin-bottom: 10px;
+}
+
+.productDesign__listItem .productDesign__listItemImageBig {
+  display: none;
+}
+
+.productDesign__listItemTextWrap {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px 10px 10px 10px;
+}
+
+.productDesign__listItemTextWrap h3 {
+  font-size: 29px;
+  color: #aa0601;
+  font-weight: bold;
+  text-align: center;
+}
+
+.customerFeedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.customerFeedback__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.customerFeedback__listItem {
+  width: 84.5%;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 6px #00000029;
+  border-radius: 4px;
+}
+
+.customerFeedback__title {
+  font-size: 24px;
+  color: #aa0601;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.customerFeedback__listItemTextWrap {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.customerFeedback__listItemTextWrap {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.customerFeedback__listItemTextTop h5,
+.customerFeedback__listItemTextTop p,
+.customerFeedback__listItemTextBottom p {
+  color: #000000;
+  font-size: 16px;
+}
+
+.customerFeedback__listItemTextTop {
+  margin-top: 5%;
+  margin-bottom: 25%;
+}
+
+.formContent {
+  background-color: #fbf2f2;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 40px;
+}
+
+.formContent__title {
+  font-size: 24px;
+  color: #aa0601;
+  font-weight: bold;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.formContent__titleInfo {
+  color: #000000;
+  font-weight: bold;
+  padding: 24px 13px;
+  text-align: center;
+}
+
+.formContent__listWrap {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.formContent__listItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContent__listItem label {
+  color: #000000;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.formContent__listItem input {
+  border-color: #000000;
+  height: 36px;
+  background-color: #fbf2f2;
+}
+
+.formContent__listItem textarea {
+  border-color: #000000;
+  height: 136px;
+  background-color: #fbf2f2;
+}
+
+.formContent__listCheck {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.formContent__listCheck p {
+  color: #000000;
+}
+
+.formContent__button {
+  background-color: #aa0601;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.footer {
+  background-color: #aa0601;
+  padding: 24px 14px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff;
+}
+
+.footer__topLeftItem,
+.footer__topLeftItem__nav {
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3% 0;
+}
+
+.footer__topLeftItem h4 {
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+.footer__topRightList {
+  display: flex;
+}
+
+.footer__topRightListItem img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__bottom {
+  color: #ffffff;
+}
+
+.footer__nav,
+.footer__topLeftItem__nav {
+  display: none;
+}
+
+.flexWrap {
+  display: flex;
+  flex-direction: column;
+
+}
+
+@media only screen and (min-width:768px) {
+  .flexWrap {
+    width: 21%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navBar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .navBar__linkList {
+    width: 60%;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .navBar__linkButton {
+    font-size: 20px;
+    width: 50%;
+    border: none;
+  }
+
+  .titlePoster__subTitle {
+    font-size: 36px;
+  }
+
+  .titlePoster__mainTitle {
+    font-size: 64px;
+  }
+
+  .titlePoster__button {
+    width: 20%;
+    text-align: center;
+  }
+
+  .serviceInfo__listItem {
+    width: 44%;
+    padding-right: 10px;
+  }
+
+  .productType__list {
+    flex-direction: column;
+  }
+
+  .productType__listItem {
+    width: 44%;
+  }
+
+  .productDesign__title {
+    font-size: 48px;
+  }
+
+  .productDesign__list li:nth-child(2) {
+    padding-bottom: 80px;
+    padding-top: 10px;
+  }
+
+  .productDesign__listItem .productDesign__listItemImageBig {
+    display: block;
+  }
+
+  .productDesign__listItem .productDesign__listItemImageSmall {
+    display: none;
+  }
+
+  .customerFeedback__title {
+    font-size: 48px;
+  }
+
+  .customerFeedback__list {
+    margin-bottom: 10%;
+  }
+
+  .customerFeedback__listItem {
+    width: 35%;
+    margin: 15px;
+  }
+
+  .formContent__button {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer__topLeftItem__nav {
+    display: block;
+  }
+
+  .footer__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__topLeft {
+    width: 60%;
+  }
+
+  .footer__topRightListItem img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .navBar__logo {
+    width: 5%;
+  }
+
+  .navBar__linkButton {
+    width: 30%;
+  }
+
+  .titlePoster {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true');
+    /* background-size: contain; */
+  }
+
+  .titlePoster__titleContent {
+    margin: 22.3% 5% 22.3% 20%;
+  }
+
+  .serviceInfo__title {
+    padding-top: 5%;
+    font-size: 48px;
+  }
+
+  .serviceInfo__listItem {
+    width: 22%;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+
+  .serviceInfo__listItem h3 {
+    font-size: 24px;
+  }
+
+  .productType__list {
+    flex-direction: row;
+  }
+
+  .productType__listItem {
+    width: 31%;
+    margin: 1%;
+  }
+
+  .productType__title {
+    padding-top: 5%;
+  }
+
+  .productDesign__list {
+    margin-bottom: 7%;
+  }
+
+  .productDesign__listItem {
+    width: 49%;
+  }
+
+  .productDesign__list li:nth-child(2) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .customerFeedback__listItem {
+    width: 21%;
+  }
+
+  .formContent__listWrap {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .formContent__title {
+    font-size: 48px;
+  }
+
+  .formContent__container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .footer__topLeftItem {
+    padding: 1% 0;
+  }
+
+  .footer__topLeftItem h4 {
+    font-size: 36px;
+  }
+
+  .footer__topLeftItem span {
+    font-size: 36px;
+  }
+}
